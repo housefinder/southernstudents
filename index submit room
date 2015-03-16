@@ -4,6 +4,7 @@
 <?php include_once("../includes/templates/header.php"); ?>
     
 <?php
+
     if(isset($_POST["submit"])) {
         
         $bedrooms = $_POST["bedrooms"];
@@ -13,7 +14,8 @@
         $postcode = $_POST["postcode"];
         $university = $_POST["university"];
         
-        $query = "INSERT INTO users (bedrooms, description, gender, address, postcode, university) VALUES ('{$bedrooms}', '{$description}', '{$gender}', '{$address}', '{$postcode}', '{$university}')";
+        
+        $query = "INSERT INTO house (bedrooms, description, gender, address, postcode, university) VALUES ('{$bedrooms}', '{$description}', '{$gender}', '{$address}', '{$postcode}', '{$university}')";
             
         mysqli_query($connection, $query);
         
@@ -26,29 +28,29 @@
     <form action="index.php" method="post">
         <fieldset class="enter-info">
       
+<label> 
+    address: <input type="text" name="address" value="">
+    </label>
+    
+    <label>
+    postcode: <input type="text" name="postcode" value="" >    
+    </label>
+    
+    <label>
+    description: <input type="text" name="description" value="">
+    </label>
+    
+    <label>
+    bedrooms: <input type="text" name="bedrooms" value="">
+    </label>
 
-    address: <input type="text" name="Address" value="<?php echo $address;?>">
+    <label>
+    gender:
+<input type="radio" name="gender" value="male">Male <input type="radio" name="gender" value="female">Female
+    </label> 
     
-    
-    
-    postcode: <input type="text" name="Postcode" value="<?php echo $postcode;?>" >    
-    
-    
-    
-    description: <input type="text" name="Description" value="<?php echo $description;?>">
-    
-    
-    
-    bedrooms: <input type="text" name="Bedrooms" value="<?php echo $bedrooms;?>">
-    
-
-    gender: <input type="radio" name="gender" 
-            <?php if (isset($gender) && $gender== "female") echo "checked";?>
-                    value="female">Female
-            <input type="radio" name="gender"
-            <?php if (isset($gender) && $gender=="male") echo "checked";?>
-                    value="male">Male
-    university:
+            <label>
+            university:
 	<select name="university">
 <option value="AUB">Arts University Bournemouth</option>
 <option value="Bath">University of Bath</option>
@@ -80,4 +82,4 @@
 </html>
 
 
-<?php include_once("../includes/templates/footer.php"); ?>   
+<?php include_once("../includes/templates/footer.php"); ?>
