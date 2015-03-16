@@ -1,0 +1,83 @@
+<?php require_once("../includes/session.php"); ?>
+<?php require_once("../includes/connect.php"); ?>
+<?php require_once("../includes/functions.php"); ?>
+<?php include_once("../includes/templates/header.php"); ?>
+    
+<?php
+    if(isset($_POST["submit"])) {
+        
+        $bedrooms = $_POST["bedrooms"];
+        $description = $_POST["description"];
+        $gender = $_POST["gender"];
+        $address = $_POST["address"];
+        $postcode = $_POST["postcode"];
+        $university = $_POST["university"];
+        
+        $query = "INSERT INTO users (bedrooms, description, gender, address, postcode, university) VALUES ('{$bedrooms}', '{$description}', '{$gender}', '{$address}', '{$postcode}', '{$university}')";
+            
+        mysqli_query($connection, $query);
+        
+    }
+?>
+
+<html>
+<link rel="stylesheet" type="text/css" href="css/formstyles.css">
+
+    <form action="index.php" method="post">
+        <fieldset class="enter-info">
+      
+
+    address: <input type="text" name="Address" value="<?php echo $address;?>">
+    
+    
+    
+    postcode: <input type="text" name="Postcode" value="<?php echo $postcode;?>" >    
+    
+    
+    
+    description: <input type="text" name="Description" value="<?php echo $description;?>">
+    
+    
+    
+    bedrooms: <input type="text" name="Bedrooms" value="<?php echo $bedrooms;?>">
+    
+
+    gender: <input type="radio" name="gender" 
+            <?php if (isset($gender) && $gender== "female") echo "checked";?>
+                    value="female">Female
+            <input type="radio" name="gender"
+            <?php if (isset($gender) && $gender=="male") echo "checked";?>
+                    value="male">Male
+    university:
+	<select name="university">
+<option value="AUB">Arts University Bournemouth</option>
+<option value="Bath">University of Bath</option>
+<option value="BathSpa">Bath Spa University</option>               
+<option value="Bournemouth">Bournemouth University</option>                
+<option value="Brighton">University of Brighton</option>         
+<option value="Bristol">University of Bristol</option>
+<option value="Exeter">Exeter University</option>
+<option value="Kent">University of Kent</option>
+<option value="OxfordBrookes">Oxford Brookes University</option>
+<option value="Oxford">Oxford University</option>
+<option value="Plymouth">Plymouth University</option>       
+<option value="Portsmouth">Portsmouth University</option>             
+<option value="Reading">Reading University</option>
+<option value="RoyalHalloway">Royal Holloway University Of London</option>
+<option value="Sussex">University of Sussex</option>
+<option value="Southampton">Southampton University</option>                  
+<option value="BristolUWE">U.W.E Bristol</option>             
+	</select>
+            </label>
+        </fieldset>
+    
+  <fieldset class="enter-action">
+    <input class="btn" type="submit" name="submit" value="Sign Up">
+  </fieldset>
+    
+</form>
+
+</html>
+
+
+<?php include_once("../includes/templates/footer.php"); ?>   
