@@ -15,7 +15,6 @@
             $_SESSION["message"] = "Success, welcome back {$user["username"]}";
             $_SESSION["username"] = $user["username"];
             $_SESSION["user_id"] = $user["id"];
-            $_SESSION["user_level"] = 5;
 
         } else {
             $_SESSION["message"] = "Wrong username/password";
