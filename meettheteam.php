@@ -1,23 +1,10 @@
-<!doctype html>
+<?php include_once("../includes/templates/header.php"); ?>
+
 <html>
 
   <link rel="stylesheet" type="text/css" href="css/stylesheet.css">
 
 <body class="news">
-	<title>Meet The Team</title>
-  <header>
-  
-    <div class="nav">
-      <ul>
-        <li class="home"><a href="home.html">Home</a></li>
-        <li class="howitworks"><a href="howitworks.html">How It Works</a></li>
-        <li class="search"><a href="search.html">Search</a></li>
-        <li class="login"><a href="signup.html">Sign Up</a></li>
-        <li class="meetheteam"><a href="index.html">Meet The Team</a></li>
-      </ul>
-    </div>
-    
-  </header>
   
   <div id="main">
             <img class="image" src="images/chloe.jpg" alt="Chloe" width="175" height="175"> 
@@ -61,10 +48,4 @@
             </p>
   			</div>
   
-  <div id="footer">
-		Copyright
-	</div>
-  
-</body>
-
-</html>
+ <?php include_once("../includes/templates/footer.php"); ?>
