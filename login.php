@@ -4,17 +4,18 @@
     require_once("../includes/functions.php");
 
     if(isset($_POST["login"])) {
+        
         $username = $_POST["username"];
         $password = $_POST["password"];
 
         $query = "SELECT * FROM properties_users WHERE username='{$username}' AND password='{$password}' LIMIT 1";
-
         $result = mysqli_query($connection, $query);
 
         if($user = mysqli_fetch_assoc($result)) {
             $_SESSION["message"] = "Success, welcome back {$user["username"]}";
             $_SESSION["username"] = $user["username"];
             $_SESSION["user_id"] = $user["id"];
+            $_SESSION["user_level"] = 5;
 
         } else {
             $_SESSION["message"] = "Wrong username/password";
@@ -22,6 +23,6 @@
 
     }
 
-    redirectTo("index.php");
+    redirectTo("search.php");
 
 ?>
