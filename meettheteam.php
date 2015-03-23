@@ -24,11 +24,11 @@
             <img class="image" src="images/terry.jpg" alt="Terry" width="175" height="175">
             <p><b>Name:</b> Terry Bridges
             <br>
-            <b>From:</b>
+            <b>From:</b> London
             <br>
             <b>Studying:</b> Digital Media Design at Bournemouth University
             <br>
-            <b>Interests:</b>
+            <b>Interests:</b> Apart from my interest in designing websites and graphics, I also enjoy many sports mainly football. I also enjoy travelling and experiencing new experiences.
             <br>
             <b>Blog:</b> www.terrybridges96.wordpress.com
             </p>
