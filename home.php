@@ -17,8 +17,8 @@
   
 <div id="heading1"> 
     <p> <h3>Welcome to StudentHousemateFinder, let's get started</h3> <br>
-    <br> <button type="button" class="homeButton">Let Me Search For A Room</button>
-         <button type="button" class="homeButton">I Want To Post A Room</button>
+        <br> <button type="button" class="homeButton" onclick="window.location.href='search.php'">Let Me Search For A Room</button>
+         <button type="button" class="homeButton" onclick="window.location.href='signup.php'">Let Me Post A Room</button></center>
     </p>
 </div>
                 
