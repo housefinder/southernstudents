@@ -1,3 +1,6 @@
+<?php require_once("../includes/session.php"); ?>
+<?php require_once("../includes/connect.php"); ?>
+<?php require_once("../includes/functions.php"); ?>
 <?php include_once("../includes/templates/header.php"); ?>
 
 <html>
@@ -42,7 +45,7 @@
             <br>
             <b>Studying:</b> Digital Media Design at Bournemouth University
             <br>
-            <b>Interests:</b> Aside from my interest in design, outside of university work I enjoy photography, experimenting with techniques and digital minipulation photography has been something I have enjoyed for years. 
+            <b>Interests:</b> Aside from my interest in web design, outside of university work I enjoy photography, experimenting with techniques and digital minipulation photography has been something I have enjoyed for years. 
             <br>
             <b>Blog:</b> www.lukepelling.wordpress.com
             </p>
