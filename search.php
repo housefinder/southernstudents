@@ -25,7 +25,10 @@
 
 <?php
     if(isset($_POST["university"])){
-        $query = "SELECT * FROM house WHERE university = '$_POST[university]'";
+        $uni = $_POST["university"];
+        $query = "SELECT * FROM house WHERE university='{$uni}'";
+    } else {
+        $query = "SELECT * FROM house";   
     }
 ?>
 
@@ -39,7 +42,7 @@
     
 <div class="results">
 <?php
-	$query = "SELECT * FROM house";
+	
 	$result = mysqli_query($connection, $query);
 	if(!$result) {
 		die("Database query failed.");
