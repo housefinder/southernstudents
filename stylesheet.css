@@ -43,18 +43,29 @@ body {
 
 #main {
 	font-family: 'Oswald', sans-serif;
-	width: 1100px;
-	height: 200px;
+	width: 90%;
+	min-height: 200px;
 	background-color:white;
 	margin-left: auto ;
   	margin-right: auto ;
 	padding:12px, 12px, 12px, 12px;
 }
 
+#main2 {
+	font-family: 'Oswald', sans-serif;
+	width: 90%;
+	min-height: 200px;
+	background-color:white;
+	margin-left: auto ;
+  	margin-right: auto ;
+	padding:12px, 12px, 12px, 12px;
+    line-height: 15px;
+}
+
 #heading1 {
 	font-family: 'Oswald', sans-serif;
-	width: 1100px;
-	min-height: 200px;
+	width: 90%;
+	height: 300px;
 	background-color: white;
 	margin-left: auto ;
   	margin-right: auto ;
@@ -63,7 +74,7 @@ body {
 
 #mainimagediv {
 	font-family: 'Oswald', sans-serif;
-	width: 1100px;
+	width: 90%;
 	height: 300px;
 	background-color: white;
 	margin-left: auto ;
@@ -73,14 +84,15 @@ body {
 
 #howitworks {
 	font-family: 'Oswald', sans-serif;
-	width: 1100px;
-	height: 40px;
+	width: 90%;
+	height: 50px;
     color: #485748;
 	background-color:white;
-	margin-left: auto ;
-  	margin-right: auto ;
-	
+	margin-left: auto;
+  	margin-right: auto;
+    line-height: 60px;
 }
+
 
 .image {
 	padding:2px, 2px, 2px, 2px;
@@ -145,12 +157,12 @@ p {
 
 #para3 {
 	font-family: 'Oswald', sans-serif;
-	width: 400px;
-	height: 800px;
-	background-color:#fff;
-	margin-left: 120px ;
-  	margin-right: 50px ;
-	padding:1px, 1px, 1px, 1px;
+	width: 40%;
+	height: 700px;
+	background-color: white;
+	margin-left: auto;
+  	margin-right: auto;
+	padding:20px, 10px, 10px, 10px;
 	line-height: 30px;
     float: left;
 
@@ -158,12 +170,12 @@ p {
 
 #para4 {
 	font-family: 'Oswald', sans-serif;
-	width: 400px;
-	height: 400px;
-	background-color:#fff;
-	margin-left: 120px ;
-  	margin-right: 50px ;
-	padding:10px, 10px, 10px, 10px;
+	width: 40%;
+	height: 700px;
+	background-color: white;
+	margin-left: auto;
+  	margin-right: auto;
+	padding:20px, 10px, 10px, 10px;
 	line-height: 30px; 
     float: left;
   
@@ -194,16 +206,14 @@ p {
 }
 
 .results {
-	font-family: 'Oswald', sans-serif;
-	width: 750px;
+    font-family: 'Oswald', sans-serif;
+	width: 90%;
 	height: 200px;
 	background-color:rgba(255, 255, 255, 0);
-	margin-left: 600px ;
-  	margin-right: 100px ;
+	margin-left: auto ;
+  	margin-right: auto ;
 	padding:12px, 12px, 12px, 12px;
     position: absolute;
-    left: 50px;
-    top: 47px;
 
 }
 
@@ -213,5 +223,5 @@ p {
     margin: 20px;
 	background-color:white;
 	padding: 20px;
-	line-height: 30px;
+	line-height: 20px;
 }
