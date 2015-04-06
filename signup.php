@@ -67,6 +67,13 @@
 
 <body class="news">
 	
+    <?php if(isset($_SESSION["user"])) { ?>
+    <div id="main2">
+    <p>
+        <center><h4>Welcome!</h4> Now that you are logged in you are able to submit rooms. <br> Head on over to the Search page, here you will can enter different infromation about the vacant room via the submission form.</center>
+    </p>
+    </div>
+    <?php } ?>	
   
  	
     <div id="para2">
