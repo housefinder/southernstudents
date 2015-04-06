@@ -81,6 +81,11 @@
         
         <?php if(isset($mess)) { 
          echo $mess; } ?>
+         
+      <center>Sign Up</center>
+        <br>
+        <center><h4>Once you have created an account you will be able to submit rooms to the site, allowing others to see the vacancy.</h4></center>
+        <br>
         
       <?php include_once("../includes/templates/signupform.php"); ?>
        
