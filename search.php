@@ -19,8 +19,7 @@
         $query = "INSERT INTO house (gender, address, university, postcode, description, bedrooms, rent, contact) VALUES ('{$gender}', '{$address}', '{$university}', '{$postcode}', '{$description}', '{$bedrooms}', '{$rent}', '{$contact}')";
 
         mysqli_query($connection, $query);
-        
-    }
+}
 ?>
 
 <?php
@@ -40,7 +39,7 @@
     
 <?php require_once("../includes/templates/filterform.php"); ?>
     
-<div class="results">
+<div class="main2">
 <?php
 	
 	$result = mysqli_query($connection, $query);
