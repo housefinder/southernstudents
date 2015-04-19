@@ -1,4 +1,9 @@
-<link rel="stylesheet" type="text/css" href="css/loginform.css">
+<div id="main2">
+    <link rel="stylesheet" type="text/css" href="css/loginform.css">
+    <p>
+        
+        <center>Sign In</center>
+    <br>
             
     <form action="../public/login.php" method="post">
         <fieldset class="enter-info" name="login">
@@ -22,3 +27,6 @@
                 <input class="btn" type="submit" name="login" value="Login">
         </fieldset>
     </form>
+    
+     </p>
+</div>
