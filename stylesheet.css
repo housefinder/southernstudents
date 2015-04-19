@@ -65,17 +65,7 @@ body {
 #heading1 {
 	font-family: 'Oswald', sans-serif;
 	width: 90%;
-	height: 300px;
-	background-color: white;
-	margin-left: auto ;
-  	margin-right: auto ;
-	padding:12px, 12px, 12px, 12px;
-}
-
-#mainimagediv {
-	font-family: 'Oswald', sans-serif;
-	width: 90%;
-	height: 300px;
+	min-height: 300px;
 	background-color: white;
 	margin-left: auto ;
   	margin-right: auto ;
@@ -90,7 +80,7 @@ body {
 	background-color:white;
 	margin-left: auto;
   	margin-right: auto;
-    line-height: 60px;
+    line-height: 50px;
 }
 
 
@@ -130,19 +120,6 @@ p {
 	line-height: 25px;
 }
 
-#para {
-	font-family: 'Oswald', sans-serif;
-	width: 350px;
-	height: 100px;
-	background-color:#fff;
-	margin-left: 250px ;
-  	margin-right: 50px ;
-	padding:2px, 2px, 2px, 2px;
-    position: absolute;
-    top: 70px;
-    
-}
-
 .homeButton {
 
 	background: #99bc9f;
@@ -174,4 +151,33 @@ p {
 	background-color:white;
 	padding: 20px;
 	line-height: 20px;
+}
+
+.ftb {
+    border-radius: 5px;
+    color: #ffffff;
+    font-size: 9px;
+    background: #7c937c;
+    padding: 2px 5px 2px 5px;
+    text-decoration: none;
+}
+
+.ftb:hover {
+    background: #566356;
+    text-decoration: none;
+}
+
+.homeButton {
+    border-radius: 5px;
+    color: #ffffff;
+    background: #7c937c;
+    font-family: 12px/1.4 "Helvetica Neue", Helvetica, Arial, sans-serif;
+    font-size:14px;
+	padding:10px 40px;
+    text-decoration: none;
+}
+
+.homeButton:hover {
+    background: #566356;
+    text-decoration: none;
 }
