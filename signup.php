@@ -43,10 +43,10 @@
         $query = "INSERT INTO users (username, password, firstname, lastname, email, university) VALUES ('{$username}', '{$password}', '{$firstname}', '{$lastname}', '{$email}', '{$university}')";
         mysqli_query($connection, $query);
             
-            if($result) {
-                $mess = "Success";
+            if($query) {
+                $mess = "Account created, please sign in above.";
             } else {
-                $mess = "Sorry";
+                $mess = "Sorry, something went wrong.";
             }
         $username = "";
         $password = "";
@@ -68,7 +68,7 @@
     <?php if(isset($_SESSION["user"])) { ?>
     <div id="main2">
     <p>
-        <center><h4>Welcome!</h4> Now that you are logged in you are able to submit rooms. <br> Head on over to the Search page, here you will can enter different infromation about the vacant room via the submission form.</center>
+        <center><h4>Welcome!</h4> Now that you are logged in you are able to submit rooms. <br> Head on over to the Search page, here you can enter infromation about the vacant room in your house via the submission form.</center>
     </p>
     </div>
     <?php } ?>
@@ -80,11 +80,11 @@
     <p>
         <center>Sign Up</center>
         <br>
-        <center><h4>Once you have created an account you will be able to submit rooms to the site, allowing others to see the vacancy.</h4></center>
+        <center><h4>Please ensure you have filled in all fields, if not your information will not be submitted. Thank you!<br>Once you have created an account you will be able to submit rooms to the site, allowing others to see the vacancy.</h4></center>
         <br>
         
-        <?php if(isset($mess)) { 
-         echo $mess; } ?>
+        <center><?php if(isset($mess)) { 
+         echo $mess; } ?></center><br>
         
       <?php include_once("../includes/templates/signupform.php"); ?>
        
